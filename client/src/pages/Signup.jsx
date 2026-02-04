@@ -17,7 +17,7 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/auth/signup", form);
+    await axios.post("https://organic-farm-1.onrender.com/api/auth/signup", form);
     alert("Signup successful");
     navigate("/login");
   };

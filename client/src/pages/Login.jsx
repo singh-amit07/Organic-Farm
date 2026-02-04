@@ -9,7 +9,7 @@ export default function Login() {
 
   const login = async () => {
     const res = await axios.post(
-      "http://localhost:5000/api/auth/login",
+      "https://organic-farm-1.onrender.com/api/auth/login",
       { email, password }
     );
 

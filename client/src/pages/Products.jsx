@@ -20,7 +20,7 @@ export default function Products() {
   const searchQuery = params.get("search") || "";
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products")
+    axios.get("https://organic-farm-1.onrender.com/api/products")
       .then(res => setProducts(res.data));
   }, []);
 

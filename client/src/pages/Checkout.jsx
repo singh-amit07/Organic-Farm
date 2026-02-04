@@ -40,7 +40,7 @@ export default function Checkout() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/orders/create",
+        "https://organic-farm-1.onrender.com/api/orders/create",
         {
           user,
           products: cart,

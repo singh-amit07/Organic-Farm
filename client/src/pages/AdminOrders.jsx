@@ -9,7 +9,7 @@ export default function AdminOrders() {
   const load = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/orders/all",
+        "https://organic-farm-1.onrender.com/api/orders/all",
         {
           headers: {
             Authorization: `Bearer ${token}`, 
@@ -34,7 +34,7 @@ export default function AdminOrders() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/orders/${id}/status`,
+        `https://organic-farm-1.onrender.com/api/orders/${id}/status`,
         { status },
         {
           headers: {

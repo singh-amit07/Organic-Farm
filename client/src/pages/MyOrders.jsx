@@ -10,7 +10,7 @@ export default function MyOrders() {
 
     axios
       .get(
-        "http://localhost:5000/api/orders/my-orders",
+        "https://organic-farm-1.onrender.com/api/orders/my-orders",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -11,7 +11,7 @@ export default function AdminProducts() {
   const load = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://organic-farm-1.onrender.com/api/products"
       );
       setProducts(res.data);
     } catch {
@@ -33,7 +33,7 @@ export default function AdminProducts() {
 
     try {
       await axios.delete(
-        "http://localhost:5000/api/admin/products/" + id,
+        "https://organic-farm-1.onrender.com/api/admin/products/" + id,
         {
           headers: {
             Authorization: `Bearer ${token}`, 

@@ -30,7 +30,7 @@ export default function AdminAddProduct() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/products",
+        "https://organic-farm-1.onrender.com/api/admin/products",
         form,
         {
           headers: {

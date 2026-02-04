@@ -26,7 +26,7 @@ export default function AdminEditProduct() {
     }
 
     axios
-      .get("http://localhost:5000/api/products/" + id)
+      .get("https://organic-farm-1.onrender.com/api/products/" + id)
       .then((res) => {
         setForm(res.data);
         setLoading(false);
@@ -42,7 +42,7 @@ export default function AdminEditProduct() {
 
   const save = async () => {
     await axios.put(
-      "http://localhost:5000/api/admin/products/" + id,
+      "https://organic-farm-1.onrender.com/api/admin/products/" + id,
       form,
       {
         headers: {
