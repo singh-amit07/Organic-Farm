@@ -18,9 +18,6 @@ import AdminOrders from "./pages/AdminOrders";
 
 function App() {
 
-useEffect(() => {
-  fetch("https://organic-farm-1.onrender.com/api/products");
-}, []);
 
 
   return (
